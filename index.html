@@ -71,3 +71,37 @@ stdout select
 0.002339 j=0 [11-0>0] Ki=11  11 12 22 25 34 64 90 
 11 12 22 25 34 64 90 
 </pre>
+
+
+<pre>
+
+stdout count
+
+0.001815 i=14 j=13 [39 > 7] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1  inversion count i
+0.002027 i=14 j=12 [39 > 33] 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2  inversion count i
+0.002040 i=14 j=11 [39 < 665] 0 0 0 0 0 0 0 0 0 0 0 1 0 0 2  not inversion count j
+   0.002050 i=14 j=10 [39 < 765] 0 0 0 0 0 0 0 0 0 0 1 1 0 0 2  not inversion count j
+   0.002059 i=14 j=9 [39 < 51] 0 0 0 0 0 0 0 0 0 1 1 1 0 0 2  not inversion count j
+   0.002068 i=14 j=8 [39 < 46] 0 0 0 0 0 0 0 0 1 1 1 1 0 0 2  not inversion count j
+   0.002077 i=14 j=7 [39 < 66] 0 0 0 0 0 0 0 1 1 1 1 1 0 0 2  not inversion count j
+   0.002086 i=14 j=6 [39 > 2] 0 0 0 0 0 0 0 1 1 1 1 1 0 0 3  inversion count i
+   0.002095 i=14 j=5 [39 > 24] 0 0 0 0 0 0 0 1 1 1 1 1 0 0 4  inversion count i
+   0.002104 i=14 j=4 [39 < 802] 0 0 0 0 1 0 0 1 1 1 1 1 0 0 4  not inversion count j
+   0.002113 i=14 j=3 [39 < 90] 0 0 0 1 1 0 0 1 1 1 1 1 0 0 4  not inversion count j
+   0.002122 i=14 j=2 [39 < 75] 0 0 1 1 1 0 0 1 1 1 1 1 0 0 4  not inversion count j
+...
+=5 j=1 [24 < 45] 7 5 8 8 10 2 0 8 6 7 13 12 3 1 4  not inversion count j
+   0.002880 i=5 j=0 [24 < 170] 8 5 8 8 10 2 0 8 6 7 13 12 3 1 4  not inversion count j
+   0.002889 i=4 j=3 [802 > 90] 8 5 8 8 11 2 0 8 6 7 13 12 3 1 4  inversion count i
+   0.002898 i=4 j=2 [802 > 75] 8 5 8 8 12 2 0 8 6 7 13 12 3 1 4  inversion count i
+   0.002908 i=4 j=1 [802 > 45] 8 5 8 8 13 2 0 8 6 7 13 12 3 1 4  inversion count i
+   0.002917 i=4 j=0 [802 > 170] 8 5 8 8 14 2 0 8 6 7 13 12 3 1 4  inversion count i
+   0.002926 i=3 j=2 [90 > 75] 8 5 8 9 14 2 0 8 6 7 13 12 3 1 4  inversion count i
+   0.002936 i=3 j=1 [90 > 45] 8 5 8 10 14 2 0 8 6 7 13 12 3 1 4  inversion count i
+   0.002945 i=3 j=0 [90 < 170] 9 5 8 10 14 2 0 8 6 7 13 12 3 1 4  not inversion count j
+   0.003036 i=2 j=1 [75 > 45] 9 5 9 10 14 2 0 8 6 7 13 12 3 1 4  inversion count i
+   0.003053 i=2 j=0 [75 < 170] 10 5 9 10 14 2 0 8 6 7 13 12 3 1 4  not inversion count j
+   0.003063 i=1 j=0 [45 < 170] 11 5 9 10 14 2 0 8 6 7 13 12 3 1 4  not inversion count j
+   2 7 24 33 39 45 46 51 66 75 90 170 665 765 802 
+
+</pre>
